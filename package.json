@@ -9,9 +9,7 @@
     "lint": "next lint",
     "start": "next start",
     "dev:migrate": "npx prisma migrate dev",
-    "prisma:push":"npx prisma db push",
-    "docker:dev": "docker run -p 3000:3000 --name miles-app --rm -d miles-app:latest",
-    "db:up": "docker run --name postgres --env-file ./.env -p 5432:5432 --rm postgres"
+    "prisma:push":"npx prisma db push"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.5",
