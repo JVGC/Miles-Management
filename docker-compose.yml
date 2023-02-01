@@ -21,6 +21,10 @@ services:
       - postgres
     networks:
       - postgres
+    volumes:
+      - .:/usr/app
+      - /usr/app/dist
+      - /usr/app/node_modules
 
 networks:
   postgres:
