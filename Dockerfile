@@ -8,7 +8,7 @@ ENV NODE_ENV=development
 COPY yarn.lock .
 COPY package.json .
 RUN yarn install
-
+RUN yarn postinstall
 
 COPY . .
 
