@@ -9,9 +9,11 @@ declare module "next-auth" {
     user?: {
       id: string;
       role: "ADMIN" | "USER"
+      googleId: string
     } & DefaultSession["user"];
   }
   interface User extends DefaultUser{
+    googleId: string
     role?: "ADMIN" | "USER"
   }
 }
